@@ -17,8 +17,6 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
       duration: const Duration(seconds: 3),
       vsync: this)..repeat();
 
-
-
   @override
   void dispose() {
     // TODO: implement dispose
@@ -38,15 +36,12 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
         MaterialPageRoute(builder: (context) => WorldStatesScreen()),
       ),
     );
-
-
-
   }
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade800,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -71,7 +66,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
             SizedBox(height: MediaQuery.of(context).size.height * .08,),
             Align(
               alignment: Alignment.center,
-              child: Text('Covid\nTracker App', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,),
+              child: Text('     Covid\nTracker App', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.white),
 
             ))],
         ),
