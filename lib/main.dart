@@ -1,5 +1,6 @@
 import 'package:covid19/Screens/signup.dart';
 import 'package:covid19/Screens/splash_screen.dart';
+import 'package:covid19/Screens/world_states.dart';
 import 'package:flutter/material.dart';
 
 void main() {
